@@ -35,6 +35,7 @@ class ViewController: UIViewController, UICollectionViewDataSource {
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
+    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell =  collectionView.dequeueReusableCell(withReuseIdentifier: "collectionCell", for: indexPath) as! NewCollectionViewCell
         cell.titleLabel.text = NewItems[indexPath.row]
